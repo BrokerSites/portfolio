@@ -5,9 +5,75 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.radial-bg {
+  background: radial-gradient(165.44% 69.99% at 50% 52.87%, #2975BC 0%, #1A180E 100%);
+  background-repeat: no-repeat;
+  /* Prevents the background from repeating */
+  background-size: cover;
+  /* Ensures the gradient covers the entire background */
+  height: 50vh;
+  /* Optional: Makes sure the body takes at least the height of the viewport */
+}
+
+.MuiToolbar-root {
+  justify-content: center;
+
+}
+
+.nav-bar {
+  background-color: transparent !important;
+  background: var(--card, radial-gradient(372.84% 141.42% at 0% 0%, rgba(137, 137, 137, 0.60) 0%, rgba(255, 255, 255, 0.20) 100%));
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.20);
+}
+
+
+/* Glass Card*/
+.glass-card {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.60);
+  background: var(--card, radial-gradient(372.84% 141.42% at 0% 0%, rgba(137, 137, 137, 0.60) 0%, rgba(255, 255, 255, 0.20) 100%));
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(15px);
+}
+
+.glass-card .MuiTypography-root {
+  color: white;
+}
+
+
+/* Case-container*/
+.case-container {
+  background-color: #F0F0F3;
+  height: 50vh;
+}
+
+
+/* Nue Card*/
+.nue-card {
+  display: flex;
+  width: 430px;
+  height: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 40px;
+  background: var(--neu, #F0F0F3);
+  box-shadow: -7.242px -7.242px 21.725px 0px #FFF, 10.862px 10.862px 21.725px 0px rgba(174, 174, 192, 0.40);
+}
+
+/* Tablet Styles */
+@media (max-width: 999px) {}
+
+/* Mobile Styles */
+@media (max-width: 599px) {
+  .MuiToolbar-root {
+    justify-content: left;
+  }
 }
